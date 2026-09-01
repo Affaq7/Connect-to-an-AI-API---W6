@@ -1,3 +1,4 @@
+from pydantic.deprecated import copy_internals
 import os
 import json
 import time
@@ -124,7 +125,7 @@ async def extract_bio(payload: BioInput):
                 raise HTTPException(status_code=422, detail="Unprocessable Entity: LLM failed to return valid schema after repair.")
                 
     except APITimeoutError:
-        raise HTTPException(status_code=504, detail="Gateway Timeout: LLM provider took too long to respond.")[cite: 2]
+        raise HTTPException(status_code=504, detail="Gateway Timeout: LLM provider took too long to respond.")
     except APIStatusError as e:
         raise HTTPException(status_code=e.status_code, detail=f"LLM Provider Error: {e.message}")
     
