@@ -1,0 +1,50 @@
+[
+    {
+        "input": "Backend engineer with 5 years experience.",
+        "expected_category": "engineering"
+    },
+    {
+        "input": "UI/UX designer who uses Figma daily.",
+        "expected_category": "design"
+    },
+    {
+        "input": "Product manager who loves roadmaps.",
+        "expected_category": "product"
+    },
+    {
+        "input": "I just like hanging out and eating pizza.",
+        "expected_category": "other"
+    },
+    {
+        "input": "Full-stack developer building scalable web apps with React and Node.js for over 6 years.",
+        "expected_category": "engineering"
+    },
+    {
+        "input": "DevOps & Cloud Architect specializing in Kubernetes, Terraform, and AWS infrastructure.",
+        "expected_category": "engineering"
+    },
+    {
+        "input": "Brand identity and graphic designer crafting visual systems and typography for modern startups.",
+        "expected_category": "design"
+    },
+    {
+        "input": "Lead Product Designer focused on design systems, user research, and accessibility.",
+        "expected_category": "design"
+    },
+    {
+        "input": "Technical Product Owner translating customer feedback into feature specs and agile backlogs.",
+        "expected_category": "product"
+    },
+    {
+        "input": "Group Product Manager scaling B2B SaaS products from 0 to 1 and driving retention metrics.",
+        "expected_category": "product"
+    },
+    {
+        "input": "Digital marketing specialist and content strategist focused on SEO, SEM, and social campaigns.",
+        "expected_category": "other"
+    },
+    {
+        "input": "Coffee enthusiast, avid reader, and weekend hiker living in Seattle.",
+        "expected_category": "other"
+    }
+]
