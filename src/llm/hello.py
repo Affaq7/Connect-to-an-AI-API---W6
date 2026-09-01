@@ -1,0 +1,20 @@
+import os
+# pyrefly: ignore [missing-import]
+from openai import OpenAI
+# pyrefly: ignore [missing-import]
+from dotenv import load_dotenv
+
+# Load variables from .env
+load_dotenv()
+
+client = OpenAI(
+    base_url=os.environ["LLM_BASE_URL"], 
+    api_key=os.environ["LLM_API_KEY"]
+)
+
+res = client.chat.completions.create(
+    model=os.environ["LLM_MODEL"],
+    messages=[{"role": "user", "content": "Reply with exactly the word: ready"}],
+)
+
+print(res.choices[0].message.content)
