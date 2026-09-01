@@ -129,9 +129,3 @@ python evals/run.py
 * **Average Latency:** ~2,000 – 4,000 ms per live model inference
 * **Average Token Usage:** ~300 prompt tokens / ~150 completion tokens per extraction
 * **Estimated Cost:** $0.00 (leveraging OpenRouter free-tier models with `temperature=0.0` determinism)
-
----
-
-## 🔮 Next Steps & Future Enhancements
-* **Semantic Caching:** Implement a Redis cache layer keyed by input bio embeddings/hashes to deliver sub-10ms responses for recurring bios and eliminate redundant API calls.
-* **Batch Extraction:** Add a `/extract-bio/batch` endpoint supporting concurrent asynchronous processing for bulk resume or user onboarding ingestion.
